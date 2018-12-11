@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -34,8 +33,17 @@ int myfibsum(int n) {
     return myfibsum(n-1)+myfib(n);
 }
 
-//int main(){
-////    myfibseries(10);
-////    myfibseriesR(10);
-////    cout<<myfibsum(10);
-//}
+int main(){
+    cout <<"Please input a number:";
+    int n;
+    cin >> n;
+    cout <<"myfibseries"<<endl;
+    myfibseries(n);
+    cout << endl;
+    cout <<"myfibseriesR"<<endl;
+    myfibseriesR(n);
+    cout << endl;
+    cout <<"myfibsum"<<endl;
+    cout<<myfibsum(n);
+    cout << endl;
+}
