@@ -113,7 +113,7 @@ void storeData(people people_array[], const int arr_size) {
 		for (int i = 0; i<arr_size; i++)
 		{
 			output << people_array[i].id << " " << people_array[i].first_name << " " << people_array[i].last_name << " ";
-			output << people_array[i].birthday << " " << people_array[i].home;
+			output << people_array[i].birthday << " " << people_array[i].home << endl;
 		}
 		output.close();
 	}
