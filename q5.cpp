@@ -15,6 +15,8 @@ bool flag = true;
 //main
 int main() {
     cout << "Moves for 3 disk problem." << endl;
+    moveDisks(3, 1, 3, 2, 0);
+    cout << "Moves for 5 disk problem." << endl;
     moveDisks(5, 1, 3, 2, 0);
     return 0;
 }
