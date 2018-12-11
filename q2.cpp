@@ -1,4 +1,3 @@
-// 2.(a)
 #include <iostream>
 
 using namespace std;
@@ -35,6 +34,16 @@ void allperfects(int low, int high) {
     }
 }
 
-//int main(){
-//    allperfects(1,1000);
-//}
+int main(){
+    int n;
+    cout <<"please input a number n:";
+    cin >> n;
+    cout <<"divisors:";
+    printdivisors(n);
+    cout << endl  <<"sum of divisors:"<<sumdivisors(n)<<endl;
+    cout <<"please input lower number an upper number:";
+    int lower,upper;
+    cin>>lower>>upper;
+    cout << "perfect numbers:"<<endl;
+    allperfects(lower,upper);
+}
